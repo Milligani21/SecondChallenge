@@ -1,22 +1,36 @@
+/*BODY BODY, WANNA FEEL WANNA FEEEEEEL */
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
 /*This code applies to the top-most part of the scree */
 .header {
-    background-color: red;
+   padding: 20px;
+   display: flex;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-color: red;
+   color: white;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header h1 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    font-size: 50px;
+    background-color: goldenrod;
 }
 
-#name {
-    text-align: left;
-}
-
-#welcome {
-    text-align: right;
+.header div {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    background-color: green;
 }
 
 /*This code applies to the about me section in middle of the page */
 .about-me-grid {
-    background-color: white;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
@@ -82,6 +96,31 @@
 
 /*This code applies to the contact info at the bottom of the page */
 .contact {
+    display: flex;
     background-color: powderblue;
     margin-top: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 46px;
+}
+
+.phone {
+    display: flex;
+    background-color: goldenrod;
+    justify-content: left;
+    margin: 10px;
+}
+
+.email {
+    display: flex;
+    background-color: goldenrod;
+    justify-content: center;
+    margin: 10px;
+}
+
+.linkedin {
+    display: flex;
+    background-color: goldenrod;
+    justify-content: right;
+    margin: 10px;
 }
