@@ -1,127 +1,142 @@
+html {
+    height: 100%;
+}
+
 /*BODY BODY, WANNA FEEL WANNA FEEEEEEL */
+
 body {
-    background-color: black;
+    background-color: indigo;
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
-/*This code applies to the top-most part of the scree */
+/*This code applies to the top-most part of the screen */
 .header {
-   padding: 20px;
-   display: flex;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   background-color: red;
-   color: white;
-   align-items: center;
-   justify-content: space-between;
-}
-
-.header h1 {
-    display: flex;
-    font-size: 50px;
-    background-color: goldenrod;
-}
-
-.header div {
+    padding: 20px;
     display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    background-color: green;
-}
-
-/*This code applies to the about me section in middle of the page */
-.about-me-grid {
-    display: flex;
-    gap: 10px;
-    min-height: 500px;
-    max-height: 500px;
-}
-
-#about-me-box1 {
-    margin-left: 10px;
-    width: 75%;
-}
-
-#about-me-box2 {
-    margin-right: 10px;
-    width: 25%;
-}
-
-
-.about-me-grid > div {
-    background-color: grey;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 30px 30px 30px 30px;
-    gap: 10px;
-    border-color: black;
-    border-style: dashed;
-    border-width: thick;
-}
-
-
-/*This code applies to the 2x3 grid in the middle of the page */
-.grid {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 2fr);
-}
-
-.grid > div {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 2fr);
-}
-
-.box1, .box2, .box3, .box4, .box5, .box6 {
-    background-color: gray;
-    border-radius: 25px 25px 25px 25px;
-    height: 200px;
-    border-color: black;
-    border-style: dashed;
-    border-width: thick;
-    margin-top: 20px;
-}
-
-
-#grid-header {
-    position: relative;
-    margin: -4rem o 1.5rem 0;
-    padding: 0.5rem 1rem;
-    background-color: white;
-    border: 2px solid;
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-
-}
-
-/*This code applies to the contact info at the bottom of the page */
-.contact {
-    display: flex;
-    background-color: powderblue;
-    margin-top: 20px;
+    background-color: red;
+    color: white;
     align-items: center;
-    justify-content: space-evenly;
-    font-size: 46px;
-}
-
-.phone {
-    display: flex;
-    background-color: goldenrod;
-    justify-content: left;
-    margin: 10px;
-}
-
-.email {
-    display: flex;
-    background-color: goldenrod;
-    justify-content: center;
-    margin: 10px;
-}
-
-.linkedin {
-    display: flex;
-    background-color: goldenrod;
-    justify-content: right;
-    margin: 10px;
-}
+    justify-content: space-between;
+    margin-top: 5px;
+    float: top;
+ }
+ 
+ .header h1 {
+     display: flex;
+     font-size: 50px;
+     background-color: goldenrod;
+ }
+ 
+ .header div {
+     display: flex;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 30px;
+     background-color: green;
+ }
+ 
+ /*This code applies to the about me section in middle of the page */
+ 
+ .about-me-grid {
+     display: flex;
+     flex-direction: row-reverse;
+     gap: 10px;
+     height: 700px;
+     /* when I take this height out and try to use any other non PX height, it shrinks the screen by half... WHY?? */
+ }
+ 
+ #wide-side-box {
+     margin-left: 10px;
+     width: 75%;
+ }
+ 
+ #skinny-side-box {
+     margin-right: 10px;
+     width: 25%;
+ }
+ 
+ 
+ .about-me-grid > div {
+     background-color: grey;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border-radius: 30px 30px 30px 30px;
+     gap: 10px;
+     border-color: black;
+     border-style: dashed;
+     border-width: thick;
+ }
+ 
+ 
+ /*This code applies to the 2x3 grid in the wide box of the page */
+ .grid {
+     display: grid;
+     height: 100%;
+     gap: 10px;
+     grid-template-columns: repeat(2, 2fr);
+ }
+ 
+ .grid > div {
+     display: grid;
+     gap: 10px;
+     grid-template-columns: repeat(2, 2fr);
+ }
+ 
+ .box1, .box2, .box3, .box4, .box5, .box6 {
+     background-color: gray;
+     border-radius: 25px 25px 25px 25px;
+     height: 90%;
+     border-color: black;
+     border-style: dashed;
+     border-width: thick;
+     margin: 5px;
+ }
+ 
+ /*
+ #grid-header {
+     position: relative;
+     margin: -4rem o 1.5rem 0;
+     padding: 0.5rem 1rem;
+     background-color: white;
+     border: 2px solid;
+     border-radius: 8px;
+     transition: all 0.5s ease-in-out;
+ }
+ */
+ 
+ /*This code applies to the contact info at the bottom of the page */
+ .contact {
+     display: flex;
+     float: bottom;
+     position: relative;
+     background-color: powderblue;
+     margin-top: 20px;
+     margin-bottom: 5px;
+     align-items: center;
+     justify-content: space-evenly;
+     font-size: 46px;
+ }
+ 
+ .phone {
+     display: flex;
+     background-color: goldenrod;
+     justify-content: left;
+     margin: 10px;
+ }
+ 
+ .email {
+     display: flex;
+     background-color: goldenrod;
+     justify-content: center;
+     margin: 10px;
+ }
+ 
+ .linkedin {
+     display: flex;
+     background-color: goldenrod;
+     justify-content: right;
+     margin: 10px;
+ }
+ 
