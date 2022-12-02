@@ -31,19 +31,20 @@ body {
 
 /*This code applies to the about me section in middle of the page */
 .about-me-grid {
-    display: grid;
+    display: flex;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
     min-height: 500px;
     max-height: 500px;
 }
 
 #about-me-box1 {
     margin-left: 10px;
+    width: 75%;
 }
 
 #about-me-box2 {
     margin-right: 10px;
+    width: 25%;
 }
 
 
