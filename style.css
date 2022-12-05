@@ -5,7 +5,7 @@ html {
 /*BODY BODY, WANNA FEEL WANNA FEEEEEEL */
 
 body {
-    background-color: indigo;
+    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -16,25 +16,26 @@ body {
     padding: 20px;
     display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: red;
-    color: white;
+    background-color: beige;
+    color: black;
     align-items: center;
     justify-content: space-between;
     margin-top: 5px;
     float: top;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
  }
  
  .header h1 {
      display: flex;
      font-size: 50px;
-     background-color: goldenrod;
  }
  
  .header div {
      display: flex;
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      font-size: 30px;
-     background-color: green;
  }
  
  /*This code applies to the about me section in middle of the page */
@@ -56,16 +57,48 @@ body {
      margin-right: 10px;
      width: 25%;
  }
+
+ .top-of-skinny-box {
+    display: inline-block
+ }
+
+ #who-am-i {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: x-large;
+
+ }
+
+ #self-portrait {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 125px;
+    max-height: 125px;
+    margin: 10px;
+    justify-content: right;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+ }
+
+ #list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px;
+    font-size: x-large;
+ }
  
  
  .about-me-grid > div {
-     background-color: grey;
+     background-color: beige;
      margin-top: 10px;
      margin-bottom: 10px;
      border-radius: 30px 30px 30px 30px;
      gap: 10px;
      border-color: black;
-     border-style: dashed;
+     border-style: double;
      border-width: thick;
  }
  
@@ -85,11 +118,11 @@ body {
  }
  
  .box1, .box2, .box3, .box4, .box5, .box6 {
-     background-color: gray;
+     background-color: beige;
      border-radius: 25px 25px 25px 25px;
      height: 90%;
      border-color: black;
-     border-style: dashed;
+     border-style: solid;
      border-width: thick;
      margin: 5px;
  }
@@ -111,31 +144,34 @@ body {
      display: flex;
      float: bottom;
      position: relative;
-     background-color: powderblue;
+     background-color: beige;
      margin-top: 20px;
      margin-bottom: 5px;
      align-items: center;
      justify-content: space-evenly;
      font-size: 46px;
+     border-style: solid;
+     border-radius: 10px;
+     border-color: black;
  }
  
  .phone {
      display: flex;
-     background-color: goldenrod;
+     color: black;
      justify-content: left;
      margin: 10px;
  }
  
  .email {
      display: flex;
-     background-color: goldenrod;
+     color: black;
      justify-content: center;
      margin: 10px;
  }
  
  .linkedin {
      display: flex;
-     background-color: goldenrod;
+     color: black;
      justify-content: right;
      margin: 10px;
  }
